@@ -2,6 +2,8 @@
 
 **RetailStudio-Gen** is an AI-assisted creative generation tool for retail brands.
 It helps generate marketing creatives by uploading a product image, extracting colors, removing backgrounds, and applying ready-made design templates.
+Upload a product image → remove background → generate layouts, color palettes, and creatives automatically.
+Built for hackathon submission with focus on usability, speed, and AI-assisted design.
 
 This version is a **hackathon submission MVP**. Some features are partially implemented and will be improved later.
 
