@@ -1,0 +1,36 @@
+.palette-container {
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 300px;
+}
+.swatch-row {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+.swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+.swatch:hover {
+  transform: scale(1.1);
+}
+.swatch.active {
+  border: 2px solid #000;
+}
+.manual-picker {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.manual-picker label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}

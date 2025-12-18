@@ -1,0 +1,100 @@
+/* src/Editor.css */
+.editor-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 12, 20, 0.5);
+  z-index: 9999;
+}
+.editor-panel {
+  display: flex;
+  gap: 18px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+  max-width: calc(100vw - 40px);
+  height: calc(100vh - 40px);
+
+  /* Prevent controls from overflowing */
+  overflow: visible;
+}
+.editor-canvas {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  overflow: auto;
+}
+/* 🟢 FIX: Controls now scroll instead of letting content overflow */
+.editor-controls {
+  min-width: 320px;
+max-height: calc(100vh - 80px);
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* Layout of UI rows */
+.control-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap; /* 🟢 Prevents buttons from disappearing */
+}
+
+.editor-controls input[type="text"],
+.editor-controls input[type="color"],
+.editor-controls input[type="range"] {
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+  color: #fff;
+}
+/* Primary button */
+button.primary {
+  background: linear-gradient(90deg,#4f46e5,#06b6d4);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/* Secondary button */
+button.secondary {
+  background: rgba(255,255,255,0.06);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  cursor: pointer;
+  width: 100%;
+}
+/* 🟢 FIX: Color Palette stays inside panel */
+.color-palette-container {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+.color-swatch {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+}
