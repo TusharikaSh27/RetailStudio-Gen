@@ -1,4 +1,4 @@
-## 🛍️ RetailStudio-Gen
+## RetailStudio-Gen
 
 **RetailStudio-Gen** is an AI-assisted creative generation tool for retail brands.
 It helps generate marketing creatives by uploading a product image, extracting colors, removing backgrounds, and applying ready-made design templates.
