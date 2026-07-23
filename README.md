@@ -101,7 +101,7 @@ http://localhost:3000
 * Performance optimizations are planned post-hackathon
 ---
 
-## 🔐 Environment Variables
+## Environment Variables
 
 Create a `.env` file (not committed):
 
@@ -121,7 +121,7 @@ GROQ_API_KEY=your_api_key_here
 
 ---
 
-## 👩‍💻 Author
+## Author
 **Tusharika Sharma**
 https://github.com/TusharikaSh27
 
